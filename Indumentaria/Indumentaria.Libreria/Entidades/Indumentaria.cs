@@ -25,7 +25,7 @@ namespace Indumentaria.Libreria.Entidades
         }
         public string ToString()
         {
-            return $"Código: {this.Codigo} - Stock: {this.Stock} unidades - Talle: {this.Talle} - Precio: ${this.Precio}";
+            return $"Código: {this.Codigo} - Stock: {this.Stock} unidades - Talle: {this.Talle} - Precio por unidad: ${this.Precio}";
         }
         protected virtual bool Equals(Indumentaria i)
         {

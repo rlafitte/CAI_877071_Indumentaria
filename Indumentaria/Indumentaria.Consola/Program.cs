@@ -16,6 +16,7 @@ namespace Indumentaria.Consola
         static private Controlador C;
         static private TipoIndumentaria TI;
         static int _aux;
+
         static Program()
         {
             TR = new TiendaRopa();
@@ -83,13 +84,7 @@ namespace Indumentaria.Consola
                 "6 - Ingresar Orden" + Environment.NewLine +
                 "7 - Devolver Orden" + Environment.NewLine +
                 "0 - Salir" + Environment.NewLine);
-                //- Listar Indumentarias(GetDetalle())
-                //- Agregar Indumentaria(por defecto cada indumentaria ingresa con 3 de stock)
-                //- Modificar Indumentaria
-                //- Eliminar Indumentaria
-                //- Listar ordenes(con el formato "codigo) Apellido, Nombre Cliente, cantidad prendas, $ total pedido"
-                //- Ingresar Orden(debe restar stock de la prenda seleccionada)
-                //- Devolver Orden(debe volver al stock de la prenda)
+
                 //- Cuando inicia la orden el estado es inciada
                 //- Cuando el cliente deja de ingresar items el estado es prosada
                 //- Cuando el cliente Devuelve el estado pasa a devuelto
@@ -100,8 +95,7 @@ namespace Indumentaria.Consola
         }
         static Pantalon PedirDatosPantalon()
         {
-                //Console.WriteLine("Ingrese el código de pantalón");
-                //P.Codigo = C.ValidaNumerico(Console.ReadLine());
+
                 Console.WriteLine("Ingrese el stock");
                 P.Stock = C.ValidaNumerico(Console.ReadLine());
                 if (P.Stock == 0)
@@ -123,8 +117,7 @@ namespace Indumentaria.Consola
             }        
         static Camisa PedirDatosCamisa()
         {
-                //Console.WriteLine("Ingrese el código de camisa");
-                //Ca.Codigo = C.ValidaNumerico(Console.ReadLine());
+
                 Console.WriteLine("Ingrese el stock");
             Ca.Stock = C.ValidaNumerico(Console.ReadLine());
             if (Ca.Stock == 0)

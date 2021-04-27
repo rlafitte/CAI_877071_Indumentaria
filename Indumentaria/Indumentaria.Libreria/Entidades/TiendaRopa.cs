@@ -33,15 +33,18 @@ namespace Indumentaria.Libreria.Entidades
             else
             {
 
-                foreach (Indumentaria i in _inventario)
-                {
-                    _ultimo += 1;
-                }
-                _ultimo += 1;
-                return _ultimo;
-                {
+                Indumentaria IN = _inventario.Last();
+                IN.Codigo += 1;
+                return IN.Codigo;
+                //foreach (Indumentaria i in _inventario)
+                //{
+                //    _ultimo += 1;
+                //}
+                //_ultimo += 1;
+                //return _ultimo;
+                //{
 
-                }
+                //}
 
             }
         }
