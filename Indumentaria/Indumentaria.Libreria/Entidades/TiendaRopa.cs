@@ -30,7 +30,7 @@ namespace Indumentaria.Libreria.Entidades
         }
         public void Agregar(Indumentaria I)
         {
-
+            _inventario.Add(I);
         }
         public void Modificar(Indumentaria I)
         {
@@ -47,6 +47,8 @@ namespace Indumentaria.Libreria.Entidades
         public List<Indumentaria> Listar()
         {
             return _inventario;
+            
+
         }
         public List<Venta> ListarOrden()
         {

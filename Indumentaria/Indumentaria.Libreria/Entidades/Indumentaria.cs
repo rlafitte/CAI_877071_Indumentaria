@@ -18,15 +18,18 @@ namespace Indumentaria.Libreria.Entidades
         public int Stock { get => _stock; set => _stock = value; }
         public string Talle { get => _talle; set => _talle = value; }
         public double Precio { get => _precio; set => _precio = value; }
-        internal TipoIndumentaria Tipo { get => _tipo; set => _tipo = value; }
+        public TipoIndumentaria Tipo { get => _tipo; set => _tipo = value; }
+        public Indumentaria()
+        {
 
+        }
         public string ToString()
         {
             return $"Código: {this.Codigo} - Stock: {this.Stock} unidades - Talle: {this.Talle} - Precio: ${this.Precio}";
         }
         protected virtual bool Equals(Indumentaria i)
         {
-            Indumentaria aux = (Indumentaria)i;
+            Indumentaria aux = (Pantalon)i;
             if (aux.Codigo == i.Codigo)
             {
                 return true;

@@ -25,8 +25,14 @@ namespace Indumentaria.Libreria.Entidades
     public class CodigoEmpleado: Exception
     {
         public CodigoEmpleado() : base("El codigo de empleado debe ser 1, 2, o 3") { }
-    }    public class SinStock: Exception
+    }
+    public class SinStock: Exception
     {
         public SinStock() : base("No hay stock disponible") { }
     }
+    public class PrendaInvalida: Exception
+    {
+        public PrendaInvalida() : base("Código de prenda inválido") { }
+    }
+    
 }

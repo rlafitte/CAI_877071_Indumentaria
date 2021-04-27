@@ -49,6 +49,37 @@ namespace Indumentaria.Libreria.Entidades
             {
                 throw new ValorNoNumerico();
             }
+        }         
+        public double ValidaDouble(string s)
+        {
+            double d;
+            if (double.TryParse(s, out d))
+            {
+                return d;
+            }
+            else
+            {
+                throw new ValorNoNumerico();
+            }
+        }        
+        public int TipoPrenda(string s)
+        {
+            int i;
+            if (int.TryParse(s, out i))
+            {
+                if (i==1 || i == 2)
+                {
+                    return i;
+                }
+                else
+                {
+                    throw new PrendaInvalida();
+                }
+            }
+            else
+            {
+                throw new ValorNoNumerico();
+            }
         }
 
         //public void ValidaExistencia(int i)

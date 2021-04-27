@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Indumentaria.Libreria.Entidades
 {
-    abstract class TipoIndumentaria
+    public abstract class TipoIndumentaria
     {
         private string _origen;
         private double _porcentajeAlgodon;

@@ -9,13 +9,23 @@ namespace Indumentaria.Consola
 {
     public class Program
     {
+        static private TiendaRopa TR;
+        static private Venta V;
+        static private Pantalon P;
+        static private Camisa Ca;
+        static private Controlador C;
+        static int _aux;
+        static Program()
+        {
+            TR = new TiendaRopa();
+            V = new Venta();
+            P = new Pantalon();
+            Ca = new Camisa();
+            C = new Controlador();
+
+        }
         public static void Main(string[] args)
         {
-            TiendaRopa TR = new TiendaRopa();
-            Venta V = new Venta();
-            Pantalon P = new Pantalon();
-            Camisa Ca = new Camisa();
-            Controlador C = new Controlador();
 
             while (TR.Ejecucion)
             {
@@ -30,9 +40,33 @@ namespace Indumentaria.Consola
             Console.WriteLine("Ingrese la opción deseada");
             switch (i)
             {
-                case 0: 
+                case 0:
+                    Salir();
                     break;
-
+                case 1:
+                    TR.Listar();
+                    break;
+                case 2:
+                    try
+                    {
+                        Console.WriteLine("Ingrese 1 para pantalón, 2 para camisa");
+                        _aux = C.TipoPrenda(Console.ReadLine());
+                        if (_aux == 1)
+                        {
+                            TR.Agregar(PedirDatosPantalon());
+                        }
+                        if (_aux == 2)
+                        {
+                            TR.Agregar(PedirDatosCamisa());
+                        }
+                        
+                        
+                    }
+                    catch (PrendaInvalida p)
+                    {
+                        Console.WriteLine(p.Message);
+                    }
+                    break;
                 default: break;
             }
         }
@@ -61,9 +95,57 @@ namespace Indumentaria.Consola
                 //- GetDetalle se debe implemntar en Camisa y Pantalon.El template es a elección.
                 //- Hacer las custom exceptions que sean necesarias
         }
+        static Pantalon PedirDatosPantalon()
+        {
+                Console.WriteLine("Ingrese el código de pantalón");
+                P.Codigo = C.ValidaNumerico(Console.ReadLine());
+                Console.WriteLine("Ingrese el stock");
+                if (C.ValidaNumerico(Console.ReadLine()) == 0)
+                {
+                    P.Stock = 3; //por definición de ejercicio
+                }
+                else
+                {
+                    P.Stock = C.ValidaNumerico(Console.ReadLine());
+                }
+                Console.WriteLine("Ingrese el talle");
+                P.Talle = Console.ReadLine();
+                Console.WriteLine("Ingrese el precio");
+                P.Precio = C.ValidaDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese origen de la prenda");
+                P.Tipo.Origen = Console.ReadLine();
+                Console.WriteLine("Ingrese porcentaje de algodón");
+                P.Tipo.PorcentajeAlgodon = C.ValidaDouble(Console.ReadLine());
+            return P;
+            }        
+        static Camisa PedirDatosCamisa()
+        {
+                Console.WriteLine("Ingrese el código de camisa");
+                Ca.Codigo = C.ValidaNumerico(Console.ReadLine());
+                Console.WriteLine("Ingrese el stock");
+                if (C.ValidaNumerico(Console.ReadLine()) == 0)
+                {
+                    Ca.Stock = 3; //por definición de ejercicio
+                }
+                else
+                {
+                    Ca.Stock = C.ValidaNumerico(Console.ReadLine());
+                }
+                Console.WriteLine("Ingrese el talle");
+                Ca.Talle = Console.ReadLine();
+                Console.WriteLine("Ingrese el precio");
+                Ca.Precio = C.ValidaDouble(Console.ReadLine());
+                Console.WriteLine("Ingrese origen de la prenda");
+                Ca.Tipo.Origen = Console.ReadLine();
+                Console.WriteLine("Ingrese porcentaje de algodón");
+                Ca.Tipo.PorcentajeAlgodon = C.ValidaDouble(Console.ReadLine());
+            return Ca;
+            }
         static void Salir()
         {
-            
+            TR.Ejecucion = false;
         }
+
+    }
     }
 }
