@@ -32,6 +32,7 @@ namespace Indumentaria.Libreria.Entidades
             }
             else
             {
+
                 foreach (Indumentaria i in _inventario)
                 {
                     _ultimo += 1;
@@ -61,9 +62,14 @@ namespace Indumentaria.Libreria.Entidades
         {
 
         }
-        public List<Indumentaria> Listar()
+        public string Listar()
         {
-            return this._inventario;
+            string msg = "";
+            foreach(Indumentaria I in _inventario)
+            {
+                msg += I.ToString() + Environment.NewLine;
+            }
+            return msg; ;
             
 
         }

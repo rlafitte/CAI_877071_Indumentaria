@@ -45,6 +45,7 @@ namespace Indumentaria.Consola
                     Salir();
                     break;
                 case 1:
+                    
                     Console.WriteLine(TR.Listar());
                     break;
                 case 2:
