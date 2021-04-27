@@ -25,11 +25,28 @@ namespace Indumentaria.Libreria.Entidades
 
         public int GetProximoCodigo()
         {
-            //ultimo codigo de ventas o de inventario?
-            return (UltimoCodigo + 1);
+            int _ultimo = 0;
+            if (_inventario.Count == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                foreach (Indumentaria i in _inventario)
+                {
+                    _ultimo += 1;
+                }
+                _ultimo += 1;
+                return _ultimo;
+                {
+
+                }
+
+            }
         }
         public void Agregar(Indumentaria I)
         {
+            I.Codigo = GetProximoCodigo();
             _inventario.Add(I);
         }
         public void Modificar(Indumentaria I)
@@ -46,7 +63,7 @@ namespace Indumentaria.Libreria.Entidades
         }
         public List<Indumentaria> Listar()
         {
-            return _inventario;
+            return this._inventario;
             
 
         }

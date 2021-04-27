@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Indumentaria.Libreria.Entidades
 {
-    class IndumentariaCasual : TipoIndumentaria
+    public class IndumentariaCasual : TipoIndumentaria
     {
     }
 }

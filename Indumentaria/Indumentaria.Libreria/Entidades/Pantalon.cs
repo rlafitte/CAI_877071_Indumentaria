@@ -15,6 +15,10 @@ namespace Indumentaria.Libreria.Entidades
         public string Material { get => _material; set => _material = value; }
         public bool TieneBolsillos { get => _tieneBolsillos; set => _tieneBolsillos = value; }
 
+        public Pantalon()
+        {
+            TipoIndumentaria TI;
+        }
         protected override string GetDetalle()
         {
             return $"Material {this.Material} - Bolsillos {this.TieneBolsillos}";

@@ -14,6 +14,7 @@ namespace Indumentaria.Consola
         static private Pantalon P;
         static private Camisa Ca;
         static private Controlador C;
+        static private TipoIndumentaria TI;
         static int _aux;
         static Program()
         {
@@ -44,7 +45,7 @@ namespace Indumentaria.Consola
                     Salir();
                     break;
                 case 1:
-                    TR.Listar();
+                    Console.WriteLine(TR.Listar());
                     break;
                 case 2:
                     try
@@ -67,6 +68,7 @@ namespace Indumentaria.Consola
                         Console.WriteLine(p.Message);
                     }
                     break;
+
                 default: break;
             }
         }
@@ -97,22 +99,22 @@ namespace Indumentaria.Consola
         }
         static Pantalon PedirDatosPantalon()
         {
-                Console.WriteLine("Ingrese el código de pantalón");
-                P.Codigo = C.ValidaNumerico(Console.ReadLine());
+                //Console.WriteLine("Ingrese el código de pantalón");
+                //P.Codigo = C.ValidaNumerico(Console.ReadLine());
                 Console.WriteLine("Ingrese el stock");
-                if (C.ValidaNumerico(Console.ReadLine()) == 0)
-                {
-                    P.Stock = 3; //por definición de ejercicio
-                }
-                else
-                {
-                    P.Stock = C.ValidaNumerico(Console.ReadLine());
-                }
+                P.Stock = C.ValidaNumerico(Console.ReadLine());
+                if (P.Stock == 0)
+                      {
+                          P.Stock = 3; //por definición
+                      }
+                 
                 Console.WriteLine("Ingrese el talle");
                 P.Talle = Console.ReadLine();
                 Console.WriteLine("Ingrese el precio");
                 P.Precio = C.ValidaDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese origen de la prenda");
+                TI = new IndumentariaCasual();
+                P.Tipo = TI;
                 P.Tipo.Origen = Console.ReadLine();
                 Console.WriteLine("Ingrese porcentaje de algodón");
                 P.Tipo.PorcentajeAlgodon = C.ValidaDouble(Console.ReadLine());
@@ -120,23 +122,23 @@ namespace Indumentaria.Consola
             }        
         static Camisa PedirDatosCamisa()
         {
-                Console.WriteLine("Ingrese el código de camisa");
-                Ca.Codigo = C.ValidaNumerico(Console.ReadLine());
+                //Console.WriteLine("Ingrese el código de camisa");
+                //Ca.Codigo = C.ValidaNumerico(Console.ReadLine());
                 Console.WriteLine("Ingrese el stock");
-                if (C.ValidaNumerico(Console.ReadLine()) == 0)
-                {
-                    Ca.Stock = 3; //por definición de ejercicio
-                }
-                else
-                {
-                    Ca.Stock = C.ValidaNumerico(Console.ReadLine());
-                }
-                Console.WriteLine("Ingrese el talle");
+            Ca.Stock = C.ValidaNumerico(Console.ReadLine());
+            if (Ca.Stock == 0)
+            {
+                Ca.Stock = 3; //por definición
+            }
+
+            Console.WriteLine("Ingrese el talle");
                 Ca.Talle = Console.ReadLine();
                 Console.WriteLine("Ingrese el precio");
                 Ca.Precio = C.ValidaDouble(Console.ReadLine());
                 Console.WriteLine("Ingrese origen de la prenda");
-                Ca.Tipo.Origen = Console.ReadLine();
+            TI = new IndumentariaCasual();
+            Ca.Tipo = TI;
+            Ca.Tipo.Origen = Console.ReadLine();
                 Console.WriteLine("Ingrese porcentaje de algodón");
                 Ca.Tipo.PorcentajeAlgodon = C.ValidaDouble(Console.ReadLine());
             return Ca;
@@ -148,4 +150,4 @@ namespace Indumentaria.Consola
 
     }
     }
-}
+
