@@ -9,5 +9,15 @@ namespace Indumentaria.Libreria.Entidades
     class Pantalon : Indumentaria
 
     {
+        private string _material;
+        private bool _tieneBolsillos;
+
+        public string Material { get => _material; set => _material = value; }
+        public bool TieneBolsillos { get => _tieneBolsillos; set => _tieneBolsillos = value; }
+
+        protected override string GetDetalle()
+        {
+            return $"Material {this.Material} - Bolsillos {this.TieneBolsillos}";
+        }
     }
 }
