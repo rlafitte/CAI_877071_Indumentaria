@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Indumentaria.Libreria.Entidades
 {
-    class Venta
+    public class Venta
     {
         private List<VentaItem> _items = new List<VentaItem>();
         private Cliente _c = new Cliente();

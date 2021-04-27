@@ -1,0 +1,5 @@
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Libreria\obj\Debug\Indumentaria.Libreria.csproj.CoreCompileInputs.cache
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Libreria\bin\Debug\Indumentaria.Libreria.dll
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Libreria\bin\Debug\Indumentaria.Libreria.pdb
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Libreria\obj\Debug\Indumentaria.Libreria.dll
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Libreria\obj\Debug\Indumentaria.Libreria.pdb

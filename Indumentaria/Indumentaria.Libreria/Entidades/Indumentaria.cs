@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Indumentaria.Libreria.Entidades
 {
-    abstract class Indumentaria
+    public abstract class Indumentaria
     {
         private TipoIndumentaria _tipo;
         private int _codigo;

@@ -1,0 +1,10 @@
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.csprojAssemblyReference.cache
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.csproj.CoreCompileInputs.cache
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Consola.exe.config
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Consola.exe
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Consola.pdb
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Libreria.dll
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Libreria.pdb
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.csproj.CopyComplete
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.exe
+C:\Users\renar\Desktop\CAI\indumentaria-434d0b6ea968450d82b19b731e9cb675\Indumentaria\CAI_877071_Indumentaria\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.pdb
