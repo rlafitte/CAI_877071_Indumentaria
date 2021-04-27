@@ -14,7 +14,7 @@ namespace Indumentaria.Libreria.Entidades
         public string TipoManga { get => _tipoManga; set => _tipoManga = value; }
         public bool TieneEstampado { get => _tieneEstampado; set => _tieneEstampado = value; }
 
-        protected override string GetDetalle()
+        public override string GetDetalle()
         {
             return $"Tipo de manga: {this.TipoManga} - Estampado: {this.TieneEstampado}";
         }

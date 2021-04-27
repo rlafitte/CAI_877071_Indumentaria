@@ -19,7 +19,7 @@ namespace Indumentaria.Libreria.Entidades
         {
             TipoIndumentaria TI;
         }
-        protected override string GetDetalle()
+        public override string GetDetalle()
         {
             return $"Material {this.Material} - Bolsillos {this.TieneBolsillos}";
         }

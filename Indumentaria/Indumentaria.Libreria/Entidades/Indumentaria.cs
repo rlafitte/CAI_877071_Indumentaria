@@ -39,13 +39,7 @@ namespace Indumentaria.Libreria.Entidades
                 return false;
             }
         }
-        protected virtual string GetDetalle(/*Indumentaria I*/)
-        {
-            
-            //Indumentaria aux = (Camisa)I;
-            Camisa C = new Camisa();
-            return C.GetDetalle();
-            ///*return ""; //*/pendiente
-        }
+
+        public abstract string GetDetalle();
     }
 }
