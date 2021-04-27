@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Indumentaria.Libreria.Entidades
 {
-    class Camisa : Indumentaria
+    public class Camisa : Indumentaria
     {
         private string _tipoManga;
         private bool _tieneEstampado;

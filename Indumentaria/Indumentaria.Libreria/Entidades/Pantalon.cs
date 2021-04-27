@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Indumentaria.Libreria.Entidades
 {
-    class Pantalon : Indumentaria
+    public class Pantalon : Indumentaria
 
     {
         private string _material;

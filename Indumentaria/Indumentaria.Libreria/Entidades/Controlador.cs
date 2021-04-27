@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Facultad.Libreria;
 
 
-namespace Facultad.Libreria
+
+namespace Indumentaria.Libreria.Entidades
 {
     public class Controlador
     {
 
-        public List<object> _list = new List<object>();
+        //public List<object> _list = new List<object>();
 
-        private bool flag=true;
-        public bool Flag { get => flag; set => flag = value; }
+        //private bool flag=true;
+        //public bool Flag { get => flag; set => flag = value; }
         
         //public string AgregarObj(Object obj)
         //{
@@ -72,15 +72,15 @@ namespace Facultad.Libreria
         //    }
         //    }
         //}
-        public string Listar()
-        {
-            string msg = "";
-            foreach (Object obj in _list)
-            {
-                msg += (obj.ToString() + Environment.NewLine);
-            }
-            return msg;
-        }
+        //public string Listar()
+        //{
+        //    string msg = "";
+        //    foreach (Object obj in _list)
+        //    {
+        //        msg += (obj.ToString() + Environment.NewLine);
+        //    }
+        //    return msg;
+        //}
         //public string ToString()
         //{
         //    return $"{this.Dato}";

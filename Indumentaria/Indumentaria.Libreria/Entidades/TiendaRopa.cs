@@ -11,14 +11,17 @@ namespace Indumentaria.Libreria.Entidades
         public List<Indumentaria> _inventario/* = new List<Indumentaria>()*/;
         public List<Venta> _ventas/* = new List<Venta>()*/;
         private int _ultimoCodigo;
+        private bool _ejecucion;
 
         public TiendaRopa()
         {
             _inventario = new List<Indumentaria>();
             _ventas = new List<Venta>();
             _ultimoCodigo = 0;
+            _ejecucion = true;
         }
         public int UltimoCodigo { get => _ultimoCodigo; set => _ultimoCodigo = value; }
+        public bool Ejecucion { get => _ejecucion; set => _ejecucion = value; }
 
         public int GetProximoCodigo()
         {
